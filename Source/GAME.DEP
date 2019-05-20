@@ -1,0 +1,119 @@
+# IBM Developer's Workframe/2 Make File Creation run at 17:18:32 on 03/17/93
+
+# Make File Creation run in directory:
+#   C:\GAME\VOL1N8;
+
+# Assumed INCLUDE environment variable path:
+#   C:\IBMC\INCLUDE;
+#   C:\TOOLKT20\C\OS2H;
+#   C:\TOOLKT20\ASM\OS2INC;
+
+
+game.RES:  game.rc  \
+#  {.;$(INCLUDE)}OS2.H  \
+   {.;$(INCLUDE)}RESOURCE.H  \
+   {.;$(INCLUDE)}DIALOG.H  \
+   DIALOG.DLG  \
+     DIALOG.H  \
+   GAME.ICO  \
+   HEXMASK.BMP  \
+   MECH_SE.BMP  \
+   MECH_NE.BMP  \
+   MECH_N.BMP  \
+   MECH_NW.BMP  \
+   MECH_SW.BMP  \
+   MECH_S.BMP  \
+   BLDGLIGHT.BMP  \
+   BLDGMEDIUM.BMP  \
+   BLDGHEAVY.BMP  \
+   BLDGHARD.BMP  \
+   GAME.MAK
+
+bitmap.OBJ:  bitmap.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdio.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}window.h  \
+   GAME.MAK
+
+files.OBJ:  files.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}hexes.h  \
+   GAME.MAK
+
+game.OBJ:  game.c  \
+#  {$(INCLUDE);}os2.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}window.h  \
+   {.;$(INCLUDE);}resource.h  \
+   {.;$(INCLUDE);}target.h  \
+     {.;$(INCLUDE);}hexes.h  \
+   {.;$(INCLUDE);}dialog.h  \
+   {.;$(INCLUDE);}files.h  \
+   {.;$(INCLUDE);}menu.h  \
+   {.;$(INCLUDE);}mech.h  \
+   {.;$(INCLUDE);}bitmap.h  \
+   {.;$(INCLUDE);}terrain.h  \
+   GAME.MAK
+
+hexes.OBJ:  hexes.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}string.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}math.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}resource.h  \
+   {.;$(INCLUDE);}target.h  \
+     {.;$(INCLUDE);}hexes.h  \
+   {.;$(INCLUDE);}mech.h  \
+   {.;$(INCLUDE);}terrain.h  \
+   {.;$(INCLUDE);}bitmap.h  \
+   {.;$(INCLUDE);}window.h  \
+   GAME.MAK
+
+mech.OBJ:  mech.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}resource.h  \
+   {.;$(INCLUDE);}hexes.h  \
+   {.;$(INCLUDE);}mech.h  \
+   {.;$(INCLUDE);}bitmap.h  \
+   GAME.MAK
+
+menu.OBJ:  menu.c  \
+#  {$(INCLUDE);}os2.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}window.h  \
+   {.;$(INCLUDE);}resource.h  \
+   {.;$(INCLUDE);}dialog.h  \
+   {.;$(INCLUDE);}menu.h  \
+   {.;$(INCLUDE);}files.h  \
+   {.;$(INCLUDE);}terrain.h  \
+   GAME.MAK
+
+target.OBJ:  target.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}math.h  \
+#  {$(INCLUDE);}stdlib.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}target.h  \
+     {.;$(INCLUDE);}hexes.h  \
+   {.;$(INCLUDE);}dialog.h  \
+   {.;$(INCLUDE);}terrain.h  \
+   GAME.MAK
+
+terrain.OBJ:  terrain.c  \
+#  {$(INCLUDE);}os2.h  \
+   {.;$(INCLUDE);}header.h  \
+   {.;$(INCLUDE);}terrain.h  \
+   {.;$(INCLUDE);}bitmap.h  \
+   {.;$(INCLUDE);}resource.h  \
+   GAME.MAK
+
+window.OBJ:  window.c  \
+#  {$(INCLUDE);}os2.h  \
+   {.;$(INCLUDE);}window.h  \
+   GAME.MAK

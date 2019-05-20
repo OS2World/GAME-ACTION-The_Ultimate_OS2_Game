@@ -1,0 +1,33 @@
+The Ultimate OS/2 Game.
+VOL1N8.ZIP
+
+Copyright (c) 1993 Timur Tabi
+Copyright (c) 1993 Fasa Corporation
+
+The following trademarks are the property of Fasa Corporation:
+BattleTech, CityTech, AeroTech, MechWarrior, BattleMech, and 'Mech.
+The use of these trademarks should not be construed as a challenge to these marks.
+
+The program accompanies Timur Tabi's column "The Ultimate OS/2 Game", which
+appears in "OS/2 Monthly".  It is a computer representation of the BattleTech and
+Mechwarrior board games, as produced and distributed by the Fasa Coporation.
+
+Developed on:
+
+IBM PS/2 70-A21 with 16MB, 640x480x16 VGA
+
+OS/2 2.0 GA w/ various CSD's applied
+IBM C/Set 2 compiler, with CSD #22 applied
+EPM 5.51 enhanced editor
+IBM WorkFrame/2, with CSD #3 applied
+IBM NMake with HPFS-support
+
+Special thanx go to:
+
+Scott Cherkofsky, for great ideas since the very beginning.
+Erin Sasaki, for proofreading my articles, even during finals.
+Sam Lewis, president of Fasa, for giving me permission.
+
+Contributors:
+Brian C. Ladd (BCL) - Hex map routines
+Chris A. Masters (CAM) - Targetting algorithms
